@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Caveat&family=Literata:ital,wght@1,500&family=Lobster&family=Marck+Script&family=Orelega+One&family=Pacifico&family=Pattaya&family=Rampart+One&family=Rubik+Mono+One&family=Vollkorn:ital,wght@1,500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Caveat&family=Literata:ital,wght@1,500&family=Lobster&family=Marck+Script&family=Orelega+One&family=Pacifico&family=Pattaya&family=Rampart+One&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Vollkorn:ital,wght@1,500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Caveat&family=Literata:ital,wght@1,500&family=Lobster&family=Marck+Script&family=Orelega+One&family=Pacifico&family=Pattaya&family=Rampart+One&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Vollkorn:ital,wght@1,500&display=swap');
+
+
+
+
+		body{
+			margin: 0 auto;
+			max-width: 600px;
+			background: lightyellow;
+			font-family: helvetica, sans-serif; 
+		}
+		div{
+			height: 200px;
+			background-size: cover;
+			position:relative ;
+			margin: 40px 0 0 0;
+			border-radius: 14px;
+		}
+		
+		
+		p{
+			font-size: 20px;
+			font-family:Vollkorn ;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			height:30px ;
+			transition: height .5s ;
+			
+			background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+			
+			line-height: 20px;
+			text-align: justify;
+			position: absolute;
+		}
+		small{
+			opacity: 0;
+		}
+		.show-description p{
+			height: 150px;
+
+		}
+		.show-description small{
+			opacity: 1;
+		}
+		
+		.one {
+			background-image: url(image/16.jpg);
+
+		}
+		.two {
+			background-image: url(image/17.jpg);
+
+		}
+		.three{
+			background-image: url(image/18.jpg);
+
+		}
+		.price{
+			float: right;
+		}
+
+		h1{
+			font-size: 50px;
+			color: darkblue;
+			font-family: Rubik Moonrocks;
+			text-align: center;
+
+		}
+		h2{
+			font-size: 40px;
+			color: skyblue;
+			text-align: center;
+			margin: 60px 0 0 0;
+			font-family: Orelega One;
+		}
+
+		
+		span{
+			font-size: 30px;
+		}
+
+		
+		
+		
+	</style>
+	<title>Блог про Київ</title>
+</head>
+<body>
+	
+	<h1>Екскурсії по Києву</h2>
+		<h2>Перелік екскурсій</h2>
+	<div class="one">
+	<p>Печерська лавра<span class="price"> 250uah</span><br>
+		<small>Києво-Печерська лавра – православний монастир, заснований у 1051 р. монахами Антонієм і Феодосієм поблизу Києва. В ХІ ст. монастир став центром розповсюдження і затвердження християнства у Київській Русі. У ХІІ ст. монастир отримав статус «лаври» – головного великого монастиря.
+		</small>
+	</p>
+	</div>
+	<div class="two">
+	<p>Поштова площа<span class="price"> 199uah</span><br>
+		<small>Поштова площа – одна з найдавніших у Києві. Вона знаходиться на початку Подолу, на кордоні між Верхнім і Нижнім містом. Саме тому її інколи називають воротами Подолу. Тут розташовуються такі знакові об’єкти як церква Різдва Христового, будівля старовинної поштової станції та Річковий вокзал. Історія вказує на те, що перші поселення на площі існували задовго до Київської Русі. А з її історією пов’язані імена багатьох знаменитих людей.
+		</small>
+	</p>
+	</div>
+	<div class="three">
+	<p>Старий Поділ<span class="price"> 300uah</span><br>
+		<small>Поділ — один з найцікавіших і найстародавніших районів міста. За твердженням істориків, в першій половині І тисячоліття до нашої ери тут уже існувало поселення, яке було торговельним осередком.
+		</small>
+	</p>
+	</div>
+	<script>
+		$("div").on("click", function() {
+			$(this).toggleClass("show-description");
+		});
+	</script>
+	
+	
+	
+
+</body>
+<footer>
+	
+</footer>
+</html>
